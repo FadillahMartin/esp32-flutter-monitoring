@@ -1,0 +1,46 @@
+name: monitoring_kelembapan
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.6.0
+  firebase_database: ^12.2.0
+  video_player: ^2.8.1
+  flutter_native_splash: ^2.4.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  # 1. TAMBAHKAN PACKAGE INI
+  flutter_launcher_icons: 0.14.4
+
+flutter:
+  uses-material-design: true
+
+  # 2. DAFTARKAN FOLDER ASSETS DI SINI
+  assets:
+    - assets/logo.png  # <--- Ganti sesuai nama file logo kamu
+    - assets/video.mp4
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+# 3. KONFIGURASI SPLASH SCREEN (Letakkan di paling bawah)
+# Bagian ini yang menentukan tampilan logo kamu
+flutter_native_splash:
+  color: "#ffffff"           # Ubah warna background di sini (Hex Code)
+  image: assets/Splash.png     # <--- UBAH LOGO UTAMA DI SINI
+  
+  android_12:
+    image: assets/Splash.png   # <--- UBAH LOGO UNTUK ANDROID 12+ DI SINI
+    color: "#ffffff"
