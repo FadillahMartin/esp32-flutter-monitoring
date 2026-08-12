@@ -28,20 +28,14 @@ Sebelum melakukan upload program ke ESP32, pastikan library berikut sudah terins
 
 Berikut adalah petunjuk sambungan pin antara komponen hardware dan ESP32:
 
-### A. Sensor Kelembaban Tanah (Soil Moisture Sensor)
-
-| **Pin Sensor**      | **Pin ESP32**         |
-| VCC                 | Pin 3.3V / 5V ESP32   |
-| GND                 | Pin GND ESP32         |
-| A0(Analog Output)   | Pin GPIO 34 ESP32     |
-
-### B. Modul Relay (Active High)
-
-| **Pin Modul Relay**   | **Pin ESP32**      |
-| VCC                   | Pin 5V / VIN ESP32 |
-| GND                   | Pin GND ESP32      |
-| IN / Signal           | Pin GPIO 25 ESP32  |
-
+| Komponen | Pin Perangkat | Pin ESP32 | Fungsi / Catatan |
+|---|---|---|---|
+| **Soil Moisture Sensor** | VCC | 3.3V / 5V | Daya sensor |
+| | GND | GND | Ground |
+| | A0 | GPIO 34 | Signal analog |
+| **Modul Relay (Active High)** | VCC | 5V / VIN | Daya relay |
+| | GND | GND | Ground |
+| | IN / Signal | GPIO 25 | Signal kontrol |
 
 
 
